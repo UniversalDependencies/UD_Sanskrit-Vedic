@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>3997</sentences><tokens>27117</tokens><words>27117</words><fused>0</fused></total>
+    <train><sentences>2524</sentences><tokens>17445</tokens><words>17445</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>1473</sentences><tokens>9672</tokens><words>9672</words><fused>0</fused></test>
+  </size>
+  <lemmas unique="3404" /><!-- tad, yad, idam, vai, iti, eva, ca, tvad, mad, etad, bhū, as, deva, kṛ, na -->
+  <forms unique="7577" /><!-- vai, iti, eva, ca, tat, yaḥ, yat, sa, na, te, enam, bhavati, tam, ha, evam -->
+  <fusions unique="0" /><!--  -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="11">
+    <tag name="ADJ">2373</tag><!-- sarva, sva, priya, prathama, uttama, ūrdhva, mahat, kṛṣṇa, arasa, aindra -->
+    <tag name="ADV">2944</tag><!-- vai, tad, evam, hi, ā, atha, tasmāt, sam, etad, su -->
+    <tag name="AUX">301</tag><!-- as, bhū, i, śak, kṛ -->
+    <tag name="CCONJ">614</tag><!-- ca, uta, vā, tu -->
+    <tag name="DET">165</tag><!-- sarva, viśva, sva, ubhaya, bahu, ititha, anyaka, puru, tatitha, yatitha -->
+    <tag name="NOUN">8842</tag><!-- deva, agni, paśu, yajña, indra, soma, loka, rūpa, kāma, brahman -->
+    <tag name="NUM">292</tag><!-- śata, tri, saptan, dvi, eka, sahasra, aṣṭan, dvādaśan, pañcan, catur -->
+    <tag name="PART">1890</tag><!-- iti, eva, na, ha, iva, u, yathā, a, mā, id -->
+    <tag name="PRON">4148</tag><!-- tad, yad, idam, tvad, mad, etad, enad, adas, anya, ka -->
+    <tag name="SCONJ">265</tag><!-- yat, yadi, yatra, yadā, yāvat, yatas -->
+    <tag name="VERB">5283</tag><!-- bhū, kṛ, vid, yaj, ālabh, dhā, ah, jan, i, gam -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="31">
+    <feat name="Case" value="Abl" upos="ADJ,ADV,DET,NOUN,NUM,PRON,VERB">327</feat><!-- antardeśāt, diśaḥ, tasmāt, asmat, rakṣobhyaḥ, araṇyāt, mat, aṃhasaḥ, agneḥ, asmāt -->
+    <feat name="Case" value="Acc" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">4391</feat><!-- tat, enam, tam, tvā, etat, naḥ, tām, yajñam, mā, imam -->
+    <feat name="Case" value="Dat" upos="ADJ,DET,NOUN,NUM,PRON,VERB">760</feat><!-- asmai, te, naḥ, tasmai, samṛddhyai, agnaye, indrāya, me, vāyave, devebhyaḥ -->
+    <feat name="Case" value="Gen" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">1494</feat><!-- asya, te, tasya, naḥ, yajñasya, devānām, me, eṣām, yasya, vaḥ -->
+    <feat name="Case" value="Ins" upos="ADJ,ADV,DET,NOUN,NUM,PRON,VERB">1073</feat><!-- tena, devatayā, bhāgadheyena, brahmaṇā, etena, indriyeṇa, manasā, vācā, anena, yena -->
+    <feat name="Case" value="Loc" upos="ADJ,DET,NOUN,NUM,PRON,VERB">719</feat><!-- asmin, yajñe, loke, gṛhe, agnau, apsu, asyām, ātman, agre, divi -->
+    <feat name="Case" value="Nom" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">7186</feat><!-- yaḥ, sa, tat, saḥ, yat, agniḥ, devāḥ, tvam, sā, te -->
+    <feat name="Case" value="Voc" upos="ADJ,DET,NOUN,NUM,PRON,VERB">454</feat><!-- agne, indra, oṣadhe, vrātya, soma, aśvinā, deva, jātavedaḥ, vaśe, marutaḥ -->
+    <feat name="Gender" value="Fem" upos="ADJ,AUX,DET,NOUN,NUM,PRON,VERB">3298</feat><!-- sā, tāḥ, tām, vaśā, yāḥ, devatāḥ, diśaḥ, āpaḥ, iyam, etāḥ -->
+    <feat name="Gender" value="Masc" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">9031</feat><!-- yaḥ, sa, enam, tam, asya, saḥ, devāḥ, agniḥ, asmai, ye -->
+    <feat name="Gender" value="Neut" upos="ADJ,ADV,DET,NOUN,NUM,PRON,VERB">3763</feat><!-- tat, yat, etat, idam, brahma, vīryam, samṛddham, namaḥ, rūpam, priyam -->
+    <feat name="Mood" value="Imp" upos="AUX,VERB">776</feat><!-- astu, etu, jahi, cara, kṛdhi, dhehi, pātu, tiṣṭha, anubrūhi, kṛṇu -->
+    <feat name="Mood" value="Ind" upos="AUX,VERB">2943</feat><!-- bhavati, veda, anvāha, asi, āhuḥ, āha, uvāca, anuvyacalat, abhavat, dadhāti -->
+    <feat name="Mood" value="Jus" upos="AUX,VERB">59</feat><!-- rūrupaḥ, dhāḥ, duḥ, karat, takṣan, vidan, vidat, anuvocaḥ, apagāḥ, bharan -->
+    <feat name="Mood" value="Opt" upos="AUX,VERB">328</feat><!-- ālabheta, syāt, yājayet, anubrūyāt, kurvīta, kuryāt, brūyāt, jāyeta, syāma, icchet -->
+    <feat name="Mood" value="Sub" upos="AUX,VERB">166</feat><!-- asaḥ, asat, kṛṇavat, asasi, asāni, dadhat, āyati, asati, ativardhā, bhavāsi -->
+    <feat name="Number" value="Dual" upos="ADJ,AUX,DET,NOUN,NUM,PRON,VERB">634</feat><!-- tau, aśvinau, dyāvāpṛthivī, aśvinā, māsau, bhavataḥ, vām, te, mitrāvaruṇau, triṣṭubhau -->
+    <feat name="Number" value="Plur" upos="ADJ,AUX,DET,NOUN,NUM,PRON,VERB">4407</feat><!-- naḥ, devāḥ, ye, te, āhuḥ, tāḥ, devānām, paśavaḥ, vaḥ, paśūn -->
+    <feat name="Number" value="Sing" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">15635</feat><!-- tat, yaḥ, sa, enam, bhavati, tam, te, yat, asya, saḥ -->
+    <feat name="Person" value="1" upos="AUX,VERB">320</feat><!-- yajai, kṛṇomi, asmi, syāma, utsrakṣyāmaḥ, vidma, agrabham, avocam, hanmi, havāmahe -->
+    <feat name="Person" value="2" upos="AUX,VERB">733</feat><!-- asi, jahi, cara, asaḥ, kṛdhi, dhehi, tiṣṭha, anubrūhi, kṛṇu, bhava -->
+    <feat name="Person" value="3" upos="AUX,VERB">3219</feat><!-- bhavati, veda, anvāha, ālabheta, āhuḥ, āha, uvāca, anuvyacalat, astu, abhavat -->
+    <feat name="Tense" value="Fut" upos="VERB">63</feat><!-- utsrakṣyāmaḥ, pārayitāsmi, anuvakṣyati, bhaviṣyat, eṣyati, āgantā, abhidhrokṣyan, anuprajñāsyanti, avakalpayiṣyasi, bhavitā -->
+    <feat name="Tense" value="Past" upos="AUX,VERB">2048</feat><!-- veda, anvāha, āhuḥ, āha, uvāca, vidvān, anuvyacalat, abhavat, samṛddham, upāsarat -->
+    <feat name="Tense" value="Pqp" upos="VERB">2</feat><!-- anannamuḥ, jagrabham -->
+    <feat name="Tense" value="Pres" upos="AUX,VERB">3206</feat><!-- bhavati, ālabheta, asi, astu, dadhāti, gacchati, yajati, yajamānaḥ, āśāste, avarunddhe -->
+    <feat name="VerbForm" value="Conv" upos="VERB">165</feat><!-- bhūtvā, kṛtvā, āptvā, iṣṭvā, paryetya, grāhayitvā, apahatya, dṛṣṭvā, sambhūya, upakalpya -->
+    <feat name="VerbForm" value="Gdv" upos="VERB">64</feat><!-- anūcyaḥ, anūcyam, kartavyam, ādṛtyam, anūcyāni, kartavyaḥ, aśitavyam, deyam, kartavyāḥ, abhicaraṇīyam -->
+    <feat name="VerbForm" value="Inf" upos="VERB">36</feat><!-- jīvase, dṛśe, janitoḥ, starītave, attave, bhartave, bhavitoḥ, cakṣase, etum, hiṃsitoḥ -->
+    <feat name="VerbForm" value="Part" upos="AUX,VERB">1047</feat><!-- vidvān, samṛddham, yajamānaḥ, san, jātaḥ, upahūtā, kriyamāṇam, yajamānasya, yajamānāya, yajamānam -->
+    <feat name="Voice" value="Pass" upos="VERB">125</feat><!-- kriyamāṇam, kriyate, ālabhyate, avadīyamānasya, mathyamānāya, praṇīyamāne, praṇīyamānābhyām, ālabhyante, abhiśasyamānam, anuvidyate -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="30">
+    <dep name="acl">1120</dep>
+    <dep name="advcl">908</dep>
+    <dep name="advmod">2725</dep>
+    <dep name="amod">768</dep>
+    <dep name="appos">123</dep>
+    <dep name="aux">19</dep>
+    <dep name="case">274</dep>
+    <dep name="cc">635</dep>
+    <dep name="ccomp">366</dep>
+    <dep name="compound">41</dep>
+    <dep name="conj">1735</dep>
+    <dep name="cop">282</dep>
+    <dep name="csubj">67</dep>
+    <dep name="det">742</dep>
+    <dep name="discourse">973</dep>
+    <dep name="dislocated">1</dep>
+    <dep name="fixed">28</dep>
+    <dep name="flat">146</dep>
+    <dep name="iobj">554</dep>
+    <dep name="mark">864</dep>
+    <dep name="nmod">1617</dep>
+    <dep name="nsubj">3410</dep>
+    <dep name="nummod">181</dep>
+    <dep name="obj">2260</dep>
+    <dep name="obl">1971</dep>
+    <dep name="orphan">239</dep>
+    <dep name="parataxis">205</dep>
+    <dep name="root">3997</dep>
+    <dep name="vocative">363</dep>
+    <dep name="xcomp">503</dep>
+  </deps>
+</treebank>
