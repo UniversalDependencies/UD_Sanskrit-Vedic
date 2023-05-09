@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit 13e6b709a8bc643c3f902800321a7beda46feb8d
+commit 04abe686385f14a9a6f68784bd723a6b60ded594
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun Nov 13 22:03:41 2022 +0100
+Date:   Tue May 9 00:14:39 2023 +0200
 Evaluating the following revision of UD_Sanskrit-Vedic:
-commit 3b90af58539bf0611030048126ddfa4d1882a779
+commit f18dc3ea6a7b076be438c6684600a3656c9b3aab
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sat May 14 15:22:36 2022 +0200
+Date:   Mon Nov 14 12:30:27 2022 +0100
 Size: counted 27117 of 27117 words (nodes).
 Size: min(0, log((N/1000)**2)) = 6.60032167496877.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -24,18 +24,18 @@ Udapi:
 Udapi: found 8733 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 27117 words.
 Genres: found 1 out of 17 known.
-validate.py --lang sa --max-err=10 UD_Sanskrit-Vedic/sa_vedic-ud-test.conllu
-[Line 753 Sent AB_1_1_6 Node 12]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [9, 10]. Outer subjects are allowed if a clause acts as the predicate of another clause.
-[Line 818 Sent AB_1_1_9 Node 5]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [3, 8]. Outer subjects are allowed if a clause acts as the predicate of another clause.
-[Line 13437 Sent ṚV_1_98_3_1_2 Node 3]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [8, 10]. Outer subjects are allowed if a clause acts as the predicate of another clause.
+/net/work/people/zeman/unidep/tools/validate.py --lang sa --max-err=10 UD_Sanskrit-Vedic/sa_vedic-ud-test.conllu
+[Line 753 Sent AB_1_1_6 Node 12]: [L3 Syntax too-many-subjects] Multiple subjects [9, 10] not subtyped as ':outer'. Outer subjects are allowed if a clause acts as the predicate of another clause.
+[Line 818 Sent AB_1_1_9 Node 5]: [L3 Syntax too-many-subjects] Multiple subjects [3, 8] not subtyped as ':outer'.
+[Line 13437 Sent ṚV_1_98_3_1_2 Node 3]: [L3 Syntax too-many-subjects] Multiple subjects [8, 10] not subtyped as ':outer'.
 Syntax errors: 3
 *** FAILED *** with 3 errors
 Exit code: 1
-validate.py --lang sa --max-err=10 UD_Sanskrit-Vedic/sa_vedic-ud-train.conllu
-[Line 8743 Sent AB_2_11_10 Node 5]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [3, 4]. Outer subjects are allowed if a clause acts as the predicate of another clause.
-[Line 11803 Sent AB_2_20_7 Node 9]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [4, 6]. Outer subjects are allowed if a clause acts as the predicate of another clause.
-[Line 11814 Sent AB_2_20_7_1 Node 4]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [1, 5]. Outer subjects are allowed if a clause acts as the predicate of another clause.
-[Line 18689 Sent ŚB_1_8_1_25_1_2_3_4 Node 12]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [2, 9]. Outer subjects are allowed if a clause acts as the predicate of another clause.
+/net/work/people/zeman/unidep/tools/validate.py --lang sa --max-err=10 UD_Sanskrit-Vedic/sa_vedic-ud-train.conllu
+[Line 8743 Sent AB_2_11_10 Node 5]: [L3 Syntax too-many-subjects] Multiple subjects [3, 4] not subtyped as ':outer'. Outer subjects are allowed if a clause acts as the predicate of another clause.
+[Line 11803 Sent AB_2_20_7 Node 9]: [L3 Syntax too-many-subjects] Multiple subjects [4, 6] not subtyped as ':outer'.
+[Line 11814 Sent AB_2_20_7_1 Node 4]: [L3 Syntax too-many-subjects] Multiple subjects [1, 5] not subtyped as ':outer'.
+[Line 18689 Sent ŚB_1_8_1_25_1_2_3_4 Node 12]: [L3 Syntax too-many-subjects] Multiple subjects [2, 9] not subtyped as ':outer'.
 Syntax errors: 4
 *** FAILED *** with 4 errors
 Exit code: 1
