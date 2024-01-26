@@ -29,22 +29,36 @@ Annotation and composition of this treebank are described in detail in the follo
 }
 ```
 
+An updated overview of the annotation procedure and coverage can be found here:
+
+```
+@article{vedic-parser,
+    title = {Data-driven Dependency Parsing of {V}edic {S}anskrit},
+    author = {Hellwig, Oliver and Nehrdich, Sebastian and Sellmer, Sven},
+    journal = {Language Resources \& Evaluation},
+	volume = {57},
+	pages = {1173--1206},
+    year = {2023}
+}
+```
+
 ## Train-test split
 
-Following the UD recommendations, documents are kept together when generating the train and test splits.
-For all texts but the ŚB, a ``document'' means a hymn (metrical texts) or a chapter (prose texts).
-As only few, but rather long chapters of the ŚB have been annotated, ``documents'' are text lines (each of which contains more than one sentence in most cases) separated by double dandas in the case of the ŚB.
-
+Following the UD recommendations, documents are kept together when generating the train, test and dev splits.
+For the Vedic data, the term "document" means a hymn (metrical texts) or a chapter (prose texts).
+Some of these documents are not complete, meaning that not the whole chapter or hymn was annotated. This happens quite often with the Rigveda.
 
 
 # Acknowledgments
 
-The annotation has been performed by Salvatore Scarlata, Oliver Hellwig, Elia Ackermann, and Erica Biagetti.
+The annotation has been performed by Salvatore Scarlata, Oliver Hellwig, Elia Ackermann, Erica Biagetti, and Sven Sellmer.
 
 # Changelog
 
 * 2020-04-26 v1.0
   * First release in UD
+* 2024-01-26 v2.0
+  * Second release in UD
   
 <pre>
 === Machine-readable metadata (DO NOT REMOVE!) ================================
@@ -57,7 +71,7 @@ UPOS: automatic with corrections
 XPOS: converted from manual
 Features: converted from manual
 Relations: manual native
-Contributors: Scarlata, Salvatore; Ackermann, Elia; Hellwig, Oliver; Biagetti, Erica; Widmer, Paul
+Contributors: Scarlata, Salvatore; Ackermann, Elia; Hellwig, Oliver; Biagetti, Erica; Widmer, Paul; Sellmer, Sven
 Contributing: elsewhere
 Contact: hellwig7@gmx.de
 ===============================================================================
