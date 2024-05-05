@@ -5,93 +5,133 @@
        fused is the number of tokens that are split to two or more syntactic words
        The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
   <size>
-    <total><sentences>3997</sentences><tokens>27117</tokens><words>27117</words><fused>0</fused></total>
-    <train><sentences>2524</sentences><tokens>17445</tokens><words>17445</words><fused>0</fused></train>
-    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
-    <test><sentences>1473</sentences><tokens>9672</tokens><words>9672</words><fused>0</fused></test>
+    <total><sentences>27182</sentences><tokens>206440</tokens><words>206440</words><fused>0</fused></total>
+    <train><sentences>21477</sentences><tokens>161959</tokens><words>161959</words><fused>0</fused></train>
+    <dev><sentences>2996</sentences><tokens>23862</tokens><words>23862</words><fused>0</fused></dev>
+    <test><sentences>2709</sentences><tokens>20619</tokens><words>20619</words><fused>0</fused></test>
   </size>
-  <lemmas unique="3404" /><!-- tad, yad, idam, vai, iti, eva, ca, tvad, mad, etad, bhū, as, deva, kṛ, na -->
-  <forms unique="7577" /><!-- vai, iti, eva, ca, tat, yaḥ, yat, sa, na, te, enam, bhavati, tam, ha, evam -->
+  <lemmas unique="13019" /><!-- tad, iti, yad, idam, eva, tvad, mad, etad, ca, na, vai, agni, bhū, as, deva -->
+  <forms unique="35853" /><!-- iti, eva, ca, na, vai, tat, yat, yaḥ, te, atha, ha, sa, saḥ, naḥ, tvā -->
   <fusions unique="0" /><!--  -->
   <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
-  <tags unique="11">
-    <tag name="ADJ">2373</tag><!-- sarva, sva, priya, prathama, uttama, ūrdhva, mahat, kṛṣṇa, arasa, aindra -->
-    <tag name="ADV">2944</tag><!-- vai, tad, evam, hi, ā, atha, tasmāt, sam, etad, su -->
-    <tag name="AUX">301</tag><!-- as, bhū, i, śak, kṛ -->
-    <tag name="CCONJ">614</tag><!-- ca, uta, vā, tu -->
-    <tag name="DET">165</tag><!-- sarva, viśva, sva, ubhaya, bahu, ititha, anyaka, puru, tatitha, yatitha -->
-    <tag name="NOUN">8842</tag><!-- deva, agni, paśu, yajña, indra, soma, loka, rūpa, kāma, brahman -->
-    <tag name="NUM">292</tag><!-- śata, tri, saptan, dvi, eka, sahasra, aṣṭan, dvādaśan, pañcan, catur -->
-    <tag name="PART">1890</tag><!-- iti, eva, na, ha, iva, u, yathā, a, mā, id -->
-    <tag name="PRON">4148</tag><!-- tad, yad, idam, tvad, mad, etad, enad, adas, anya, ka -->
-    <tag name="SCONJ">265</tag><!-- yat, yadi, yatra, yadā, yāvat, yatas -->
-    <tag name="VERB">5283</tag><!-- bhū, kṛ, vid, yaj, ālabh, dhā, ah, jan, i, gam -->
+  <tags unique="13">
+    <tag name="ADJ">18315</tag><!-- uttara, dakṣiṇa, viśva, prāñc, prathama, mahat, udañc, priya, uttama, pratyañc -->
+    <tag name="ADP">1383</tag><!-- ā, anu, sam, adhi, pari, abhi, pra, upa, prati, ud -->
+    <tag name="ADV">13863</tag><!-- atha, tad, evam, su, ā, tasmāt, pra, tatas, tathā, vi -->
+    <tag name="AUX">1825</tag><!-- as, bhū, i, ās, sthā, car, e -->
+    <tag name="CCONJ">4222</tag><!-- ca, vā, uta, athavā -->
+    <tag name="DET">565</tag><!-- viśva, sva, bahu, ubhaya, puru, tāvat, yāvat, bhūri, samāna, etāvat -->
+    <tag name="INTJ">525</tag><!-- svāhā, oṃ, hanta, bata, hai, haye, ahe, bāl, hek, ho -->
+    <tag name="NOUN">72315</tag><!-- agni, deva, indra, yajña, brahman, loka, ap, paśu, prāṇa, soma -->
+    <tag name="NUM">2900</tag><!-- eka, tri, dvi, śata, catur, pañcan, saptan, sahasra, dvādaśan, ṣaṣ -->
+    <tag name="PART">21136</tag><!-- iti, eva, na, vai, ha, iva, hi, a, u, yathā -->
+    <tag name="PRON">27825</tag><!-- tad, yad, idam, tvad, mad, etad, sarva, enad, ka, anya -->
+    <tag name="SCONJ">1730</tag><!-- yat, yadi, yatra, yadā, ced, yāvat, yatas, yad, yasmāt, ityādi -->
+    <tag name="VERB">39836</tag><!-- kṛ, bhū, vid, hu, as, yaj, ah, vac, dhā, i -->
   </tags>
   <!-- Statistics of features and values. The comments show the most frequent word forms. -->
-  <feats unique="31">
-    <feat name="Case" value="Abl" upos="ADJ,ADV,DET,NOUN,NUM,PRON,VERB">327</feat><!-- antardeśāt, diśaḥ, tasmāt, asmat, rakṣobhyaḥ, araṇyāt, mat, aṃhasaḥ, agneḥ, asmāt -->
-    <feat name="Case" value="Acc" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">4391</feat><!-- tat, enam, tam, tvā, etat, naḥ, tām, yajñam, mā, imam -->
-    <feat name="Case" value="Dat" upos="ADJ,DET,NOUN,NUM,PRON,VERB">760</feat><!-- asmai, te, naḥ, tasmai, samṛddhyai, agnaye, indrāya, me, vāyave, devebhyaḥ -->
-    <feat name="Case" value="Gen" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">1494</feat><!-- asya, te, tasya, naḥ, yajñasya, devānām, me, eṣām, yasya, vaḥ -->
-    <feat name="Case" value="Ins" upos="ADJ,ADV,DET,NOUN,NUM,PRON,VERB">1073</feat><!-- tena, devatayā, bhāgadheyena, brahmaṇā, etena, indriyeṇa, manasā, vācā, anena, yena -->
-    <feat name="Case" value="Loc" upos="ADJ,DET,NOUN,NUM,PRON,VERB">719</feat><!-- asmin, yajñe, loke, gṛhe, agnau, apsu, asyām, ātman, agre, divi -->
-    <feat name="Case" value="Nom" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">7186</feat><!-- yaḥ, sa, tat, saḥ, yat, agniḥ, devāḥ, tvam, sā, te -->
-    <feat name="Case" value="Voc" upos="ADJ,DET,NOUN,NUM,PRON,VERB">454</feat><!-- agne, indra, oṣadhe, vrātya, soma, aśvinā, deva, jātavedaḥ, vaśe, marutaḥ -->
-    <feat name="Gender" value="Fem" upos="ADJ,AUX,DET,NOUN,NUM,PRON,VERB">3298</feat><!-- sā, tāḥ, tām, vaśā, yāḥ, devatāḥ, diśaḥ, āpaḥ, iyam, etāḥ -->
-    <feat name="Gender" value="Masc" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">9031</feat><!-- yaḥ, sa, enam, tam, asya, saḥ, devāḥ, agniḥ, asmai, ye -->
-    <feat name="Gender" value="Neut" upos="ADJ,ADV,DET,NOUN,NUM,PRON,VERB">3763</feat><!-- tat, yat, etat, idam, brahma, vīryam, samṛddham, namaḥ, rūpam, priyam -->
-    <feat name="Mood" value="Imp" upos="AUX,VERB">776</feat><!-- astu, etu, jahi, cara, kṛdhi, dhehi, pātu, tiṣṭha, anubrūhi, kṛṇu -->
-    <feat name="Mood" value="Ind" upos="AUX,VERB">2943</feat><!-- bhavati, veda, anvāha, asi, āhuḥ, āha, uvāca, anuvyacalat, abhavat, dadhāti -->
-    <feat name="Mood" value="Jus" upos="AUX,VERB">59</feat><!-- rūrupaḥ, dhāḥ, duḥ, karat, takṣan, vidan, vidat, anuvocaḥ, apagāḥ, bharan -->
-    <feat name="Mood" value="Opt" upos="AUX,VERB">328</feat><!-- ālabheta, syāt, yājayet, anubrūyāt, kurvīta, kuryāt, brūyāt, jāyeta, syāma, icchet -->
-    <feat name="Mood" value="Sub" upos="AUX,VERB">166</feat><!-- asaḥ, asat, kṛṇavat, asasi, asāni, dadhat, āyati, asati, ativardhā, bhavāsi -->
-    <feat name="Number" value="Dual" upos="ADJ,AUX,DET,NOUN,NUM,PRON,VERB">634</feat><!-- tau, aśvinau, dyāvāpṛthivī, aśvinā, māsau, bhavataḥ, vām, te, mitrāvaruṇau, triṣṭubhau -->
-    <feat name="Number" value="Plur" upos="ADJ,AUX,DET,NOUN,NUM,PRON,VERB">4407</feat><!-- naḥ, devāḥ, ye, te, āhuḥ, tāḥ, devānām, paśavaḥ, vaḥ, paśūn -->
-    <feat name="Number" value="Sing" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">15635</feat><!-- tat, yaḥ, sa, enam, bhavati, tam, te, yat, asya, saḥ -->
-    <feat name="Person" value="1" upos="AUX,VERB">320</feat><!-- yajai, kṛṇomi, asmi, syāma, utsrakṣyāmaḥ, vidma, agrabham, avocam, hanmi, havāmahe -->
-    <feat name="Person" value="2" upos="AUX,VERB">733</feat><!-- asi, jahi, cara, asaḥ, kṛdhi, dhehi, tiṣṭha, anubrūhi, kṛṇu, bhava -->
-    <feat name="Person" value="3" upos="AUX,VERB">3219</feat><!-- bhavati, veda, anvāha, ālabheta, āhuḥ, āha, uvāca, anuvyacalat, astu, abhavat -->
-    <feat name="Tense" value="Fut" upos="VERB">63</feat><!-- utsrakṣyāmaḥ, pārayitāsmi, anuvakṣyati, bhaviṣyat, eṣyati, āgantā, abhidhrokṣyan, anuprajñāsyanti, avakalpayiṣyasi, bhavitā -->
-    <feat name="Tense" value="Past" upos="AUX,VERB">2048</feat><!-- veda, anvāha, āhuḥ, āha, uvāca, vidvān, anuvyacalat, abhavat, samṛddham, upāsarat -->
-    <feat name="Tense" value="Pqp" upos="VERB">2</feat><!-- anannamuḥ, jagrabham -->
-    <feat name="Tense" value="Pres" upos="AUX,VERB">3206</feat><!-- bhavati, ālabheta, asi, astu, dadhāti, gacchati, yajati, yajamānaḥ, āśāste, avarunddhe -->
-    <feat name="VerbForm" value="Conv" upos="VERB">165</feat><!-- bhūtvā, kṛtvā, āptvā, iṣṭvā, paryetya, grāhayitvā, apahatya, dṛṣṭvā, sambhūya, upakalpya -->
-    <feat name="VerbForm" value="Gdv" upos="VERB">64</feat><!-- anūcyaḥ, anūcyam, kartavyam, ādṛtyam, anūcyāni, kartavyaḥ, aśitavyam, deyam, kartavyāḥ, abhicaraṇīyam -->
-    <feat name="VerbForm" value="Inf" upos="VERB">36</feat><!-- jīvase, dṛśe, janitoḥ, starītave, attave, bhartave, bhavitoḥ, cakṣase, etum, hiṃsitoḥ -->
-    <feat name="VerbForm" value="Part" upos="AUX,VERB">1047</feat><!-- vidvān, samṛddham, yajamānaḥ, san, jātaḥ, upahūtā, kriyamāṇam, yajamānasya, yajamānāya, yajamānam -->
-    <feat name="Voice" value="Pass" upos="VERB">125</feat><!-- kriyamāṇam, kriyate, ālabhyate, avadīyamānasya, mathyamānāya, praṇīyamāne, praṇīyamānābhyām, ālabhyante, abhiśasyamānam, anuvidyate -->
+  <feats unique="33">
+    <feat name="Case" value="Abl" upos="ADJ,ADV,DET,NOUN,NUM,PRON,VERB">2443</feat><!-- asmāt, tasmāt, asmat, divaḥ, agneḥ, lokāt, mat, tvat, aṃhasaḥ, pṛthivyāḥ -->
+    <feat name="Case" value="Acc" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">33940</feat><!-- tat, tvā, tam, enam, etat, agnim, naḥ, tām, yat, mā -->
+    <feat name="Case" value="Dat" upos="ADJ,AUX,DET,NOUN,NUM,PRON,VERB">5372</feat><!-- naḥ, asmai, te, me, agnaye, tasmai, devebhyaḥ, indrāya, vaḥ, yajamānāya -->
+    <feat name="Case" value="Gen" upos="ADJ,AUX,DET,NOUN,NUM,PRON,VERB">10239</feat><!-- asya, te, tasya, me, naḥ, yajñasya, devānām, yasya, agneḥ, vaḥ -->
+    <feat name="Case" value="Ins" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">8565</feat><!-- tena, manasā, etena, vācā, yena, adbhiḥ, tayā, paśubhiḥ, brahmaṇā, svena -->
+    <feat name="Case" value="Loc" upos="ADJ,AUX,DET,NOUN,NUM,PRON,VERB">7650</feat><!-- asmin, agnau, tasmin, loke, agre, madhye, āhavanīye, apsu, divi, yajñe -->
+    <feat name="Case" value="Nom" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">49720</feat><!-- yaḥ, saḥ, sa, tat, yat, agniḥ, te, tvam, sā, eṣa -->
+    <feat name="Case" value="Voc" upos="ADJ,NOUN,NUM,PRON,VERB">3168</feat><!-- agne, indra, deva, aśvinā, soma, jātavedaḥ, devāḥ, marutaḥ, oṣadhe, āpaḥ -->
+    <feat name="Compound" value="Yes" upos="ADJ,ADV,DET,NOUN,NUM,PRON,VERB">10850</feat><!-- _, deva, viśva, tri, eka, brahma, indra, sarva, yajña, soma -->
+    <feat name="Gender" value="Fem" upos="ADJ,AUX,DET,NOUN,NUM,PRON,VERB">21872</feat><!-- sā, tām, tāḥ, āpaḥ, apaḥ, eṣā, vāc, yā, iyam, yāḥ -->
+    <feat name="Gender" value="Masc" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">64200</feat><!-- yaḥ, saḥ, sa, tam, asya, enam, agniḥ, te, devāḥ, eṣa -->
+    <feat name="Gender" value="Neut" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">29181</feat><!-- tat, yat, etat, idam, brahma, sarvam, annam, manaḥ, namaḥ, manasā -->
+    <feat name="Mood" value="Imp" upos="AUX,VERB">4329</feat><!-- astu, bhava, dhehi, anubrūhi, pāhi, ehi, etu, santu, pātu, kṛdhi -->
+    <feat name="Mood" value="Ind" upos="AUX,VERB">19659</feat><!-- bhavati, asi, veda, uvāca, āha, juhoti, āhuḥ, bhavanti, karoti, abravīt -->
+    <feat name="Mood" value="Jus" upos="AUX,VERB">664</feat><!-- hiṃsīḥ, bhūt, dhāḥ, saṃvadiṣṭhāḥ, vidan, vigāt, kaḥ, śaṃsiṣam, hāsiṣṭām, juṣanta -->
+    <feat name="Mood" value="Opt" upos="AUX,VERB">3804</feat><!-- syāt, juhuyāt, ālabheta, kuryāt, brūyāt, kāmayeta, kurvīta, dadyāt, japet, bhūyāsam -->
+    <feat name="Mood" value="Pot" upos="VERB">32</feat><!-- agrahaiṣyat, atrapsyat, abhaviṣyan, vyapatiṣyat, abhaviṣyat, abheṣyat, ajīviṣyam, aprākṣyaḥ, avakṣyam, avakṣyan -->
+    <feat name="Mood" value="Sub" upos="AUX,VERB">681</feat><!-- asat, asaḥ, karat, asāni, bhavāti, kṛṇavat, parṣi, asasi, dadhat, pṛcchāsi -->
+    <feat name="Number" value="Dual" upos="ADJ,AUX,DET,NOUN,NUM,PRON,VERB">4500</feat><!-- vām, tau, aśvinā, dve, dvābhyām, dyāvāpṛthivī, dvau, yuvam, bhavataḥ, ete -->
+    <feat name="Number" value="Plur" upos="ADJ,AUX,DET,NOUN,NUM,PRON,VERB">31619</feat><!-- naḥ, te, devāḥ, ye, āhuḥ, vaḥ, tāḥ, āpaḥ, bhavanti, apaḥ -->
+    <feat name="Number" value="Sing" upos="ADJ,ADV,AUX,DET,NOUN,NUM,PRON,VERB">114147</feat><!-- tat, yaḥ, saḥ, yat, sa, te, tvā, etat, tam, bhavati -->
+    <feat name="Person" value="1" upos="AUX,VERB">2377</feat><!-- asmi, bhūyāsam, syāma, havāmahe, veda, īmahe, upāse, vidma, vṛṇīmahe, prapadye -->
+    <feat name="Person" value="2" upos="AUX,VERB">4888</feat><!-- asi, bhava, dhehi, stha, anubrūhi, pāhi, ehi, kṛdhi, gaccha, jahi -->
+    <feat name="Person" value="3" upos="AUX,VERB">21904</feat><!-- bhavati, veda, uvāca, āha, juhoti, āhuḥ, syāt, juhuyāt, bhavanti, karoti -->
+    <feat name="Tense" value="Fut" upos="AUX,VERB">561</feat><!-- bhaviṣyati, vyākhyāsyāmaḥ, yakṣyamāṇaḥ, bhaviṣyanti, kariṣyati, vipatiṣyati, agrahaiṣyat, atrapsyat, atyeṣyanti, vakṣyāmaḥ -->
+    <feat name="Tense" value="Past" upos="AUX,VERB">13215</feat><!-- veda, uvāca, āha, āhuḥ, vidvān, abravīt, abhavat, āsīt, _, asṛjata -->
+    <feat name="Tense" value="Pqp" upos="VERB">31</feat><!-- avāvaśanta, aśiśrayuḥ, cākan, acakriran, acucyavuḥ, adadhāvat, ajabhartana, ajagan, ajagmiran, ajuhuvuḥ -->
+    <feat name="Tense" value="Pres" upos="AUX,VERB">23881</feat><!-- bhavati, asi, juhoti, syāt, juhuyāt, bhavanti, karoti, yajamānaḥ, astu, ālabheta -->
+    <feat name="VerbForm" value="Conv" upos="VERB">3171</feat><!-- kṛtvā, hutvā, ādāya, bhūtvā, nidhāya, gṛhītvā, iṣṭvā, gatvā, ādhāya, upasamādhāya -->
+    <feat name="VerbForm" value="Gdv" upos="VERB">514</feat><!-- ādheyaḥ, deyam, hotavyam, ādṛtyam, anūcyaḥ, etavyam, upajīvanīyaḥ, kāryam, īḍyam, havyaḥ -->
+    <feat name="VerbForm" value="Inf" upos="VERB">288</feat><!-- avase, jīvase, dṛśe, pītaye, grahītum, vītaye, jīvitum, bhuje, dāvane, janayitavai -->
+    <feat name="VerbForm" value="Part" upos="AUX,VERB">8519</feat><!-- vidvān, yajamānaḥ, _, yajamānam, yajamānasya, jātaḥ, uktam, samṛddham, san, yajamānāya -->
+    <feat name="Voice" value="Pass" upos="VERB">1032</feat><!-- kriyate, hūyate, gīyate, asṛjyata, mucyate, ucyate, kriyamāṇam, atimucyate, vidyate, vijñāyate -->
   </feats>
   <!-- Statistics of universal dependency relations. -->
-  <deps unique="30">
-    <dep name="acl">1120</dep>
-    <dep name="advcl">908</dep>
-    <dep name="advmod">2725</dep>
-    <dep name="amod">768</dep>
-    <dep name="appos">123</dep>
-    <dep name="aux">19</dep>
-    <dep name="case">274</dep>
-    <dep name="cc">635</dep>
-    <dep name="ccomp">366</dep>
-    <dep name="compound">41</dep>
-    <dep name="conj">1735</dep>
-    <dep name="cop">282</dep>
-    <dep name="csubj">67</dep>
-    <dep name="det">742</dep>
-    <dep name="discourse">973</dep>
-    <dep name="dislocated">1</dep>
-    <dep name="fixed">28</dep>
-    <dep name="flat">146</dep>
-    <dep name="iobj">554</dep>
-    <dep name="mark">864</dep>
-    <dep name="nmod">1617</dep>
-    <dep name="nsubj">3410</dep>
-    <dep name="nummod">181</dep>
-    <dep name="obj">2260</dep>
-    <dep name="obl">1971</dep>
-    <dep name="orphan">239</dep>
-    <dep name="parataxis">205</dep>
-    <dep name="root">3997</dep>
-    <dep name="vocative">363</dep>
-    <dep name="xcomp">503</dep>
+  <deps unique="66">
+    <dep name="acl">5384</dep>
+    <dep name="acl:attr">279</dep>
+    <dep name="acl:cont">3</dep>
+    <dep name="acl:crel">29</dep>
+    <dep name="acl:dpct">446</dep>
+    <dep name="acl:pred">1</dep>
+    <dep name="acl:ptcp">276</dep>
+    <dep name="acl:relcl">2063</dep>
+    <dep name="advcl">3775</dep>
+    <dep name="advcl:caus">201</dep>
+    <dep name="advcl:ccomp">1357</dep>
+    <dep name="advcl:concess">57</dep>
+    <dep name="advcl:cond">686</dep>
+    <dep name="advcl:consec">4</dep>
+    <dep name="advcl:dpct">355</dep>
+    <dep name="advcl:fin">549</dep>
+    <dep name="advcl:lcl">34</dep>
+    <dep name="advcl:manner">792</dep>
+    <dep name="advcl:tcl">1646</dep>
+    <dep name="advmod">13791</dep>
+    <dep name="amod">4714</dep>
+    <dep name="appos">409</dep>
+    <dep name="aux">293</dep>
+    <dep name="case">1508</dep>
+    <dep name="case:sim">948</dep>
+    <dep name="cc">4196</dep>
+    <dep name="ccomp">2767</dep>
+    <dep name="ccomp:rel">29</dep>
+    <dep name="compound">110</dep>
+    <dep name="compound:coord">1797</dep>
+    <dep name="compound:name">47</dep>
+    <dep name="conj">13829</dep>
+    <dep name="cop">1532</dep>
+    <dep name="csubj">566</dep>
+    <dep name="det">5658</dep>
+    <dep name="discourse">8911</dep>
+    <dep name="dislocated">116</dep>
+    <dep name="fixed">1169</dep>
+    <dep name="flat">14509</dep>
+    <dep name="iobj">2605</dep>
+    <dep name="mark">7733</dep>
+    <dep name="mark:sim">474</dep>
+    <dep name="nmod">10076</dep>
+    <dep name="nmod:appos">1174</dep>
+    <dep name="nmod:pred">18</dep>
+    <dep name="nsubj">18667</dep>
+    <dep name="nummod">1590</dep>
+    <dep name="obj">15522</dep>
+    <dep name="obl">5757</dep>
+    <dep name="obl:agent">363</dep>
+    <dep name="obl:benef">418</dep>
+    <dep name="obl:goal">2160</dep>
+    <dep name="obl:grad">242</dep>
+    <dep name="obl:instr">2462</dep>
+    <dep name="obl:lmod">1584</dep>
+    <dep name="obl:manner">816</dep>
+    <dep name="obl:path">238</dep>
+    <dep name="obl:soc">515</dep>
+    <dep name="obl:source">952</dep>
+    <dep name="obl:tmod">971</dep>
+    <dep name="orphan">4489</dep>
+    <dep name="parataxis">1541</dep>
+    <dep name="root">27182</dep>
+    <dep name="vocative">2012</dep>
+    <dep name="xcomp">1313</dep>
+    <dep name="xcomp:result">730</dep>
   </deps>
 </treebank>
