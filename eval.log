@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit 78ce4b21495c6e4c17a7b07925bec1267d833d14
+commit c1984d97df0ecdcc1b50fbeaa8c96419c6321432
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun May 5 09:21:16 2024 +0200
+Date:   Sun Nov 10 10:33:45 2024 +0100
 Evaluating the following revision of UD_Sanskrit-Vedic:
-commit 6937c5b7ee18528f994912427c3fdb67a54f57df
-Merge: 101d44e b28bcc0
+commit aee9d428eff40707422adc74a9bdcda500027061
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Sun May 5 13:28:12 2024 +0200
 Size: counted 206440 of 206440 words (nodes).
 Size: min(0, log((N/1000)**2)) = 10.6600196265611.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -26,13 +26,16 @@ Udapi: worst expected case (threshold) is one bug per 10 words. There are 206440
 Genres: found 1 out of 17 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang sa --max-err=10 UD_Sanskrit-Vedic/sa_vedic-ud-dev.conllu
 [Line 3634 Sent 430121_1 Node 5]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
+[Line 9673 Sent 492828_3 Node 3]: [L3 Warning leaf-det] 'det' not expected to have children (3:etat:det --> 7:karma:acl)
 [Line 18115 Sent 585989_1 Node 7]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'dislocated'.
+[Line 25733 Sent 616932_1 Node 6]: [L3 Warning leaf-det] 'det' not expected to have children (6:tam:det --> 5:jahāsi:acl)
 [Line 27226 Sent 627755_1 Node 4]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'obl'.
+[Line 28638 Sent 630779_1 Node 1]: [L3 Warning leaf-det] 'det' not expected to have children (1:viśvam:det --> 6:śuklam:nmod)
 [Line 36679 Sent 673721_1 Node 2]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
 [Line 39171 Sent 700699_1 Node 1]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
 [Line 40800 Sent 715394_1 Node 2]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'obl'.
 [Line 40805 Sent 715394_1 Node 7]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
-Warnings: 7
+Warnings: 10
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang sa --max-err=10 UD_Sanskrit-Vedic/sa_vedic-ud-test.conllu
 [Line 290 Sent 101854_2 Node 28]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'nmod'.
@@ -46,7 +49,7 @@ Warnings: 7
 [Line 15993 Sent 589215_1 Node 5]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
 [Line 15994 Sent 589215_1 Node 6]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
 ...suppressing further errors regarding Warning
-Warnings: 16
+Warnings: 21
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang sa --max-err=10 UD_Sanskrit-Vedic/sa_vedic-ud-train.conllu
 [Line 1564 Sent 70748_1 Node 7]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
@@ -60,7 +63,7 @@ Warnings: 16
 [Line 9774 Sent 184366_1 Node 1]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'dislocated'.
 [Line 11260 Sent 186998_1 Node 10]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'obl'.
 ...suppressing further errors regarding Warning
-Warnings: 93
+Warnings: 117
 *** PASSED ***
 Validity: 1
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
