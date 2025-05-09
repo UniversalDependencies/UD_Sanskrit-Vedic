@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit c1984d97df0ecdcc1b50fbeaa8c96419c6321432
+commit ecbbdff44b15c9b6de4a691e3499c1286459ab2e
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun Nov 10 10:33:45 2024 +0100
+Date:   Fri May 9 21:07:42 2025 +0200
 Evaluating the following revision of UD_Sanskrit-Vedic:
-commit aee9d428eff40707422adc74a9bdcda500027061
+commit 5de27bd0370a3d907f40bf7d122aec27ff97a1e2
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun May 5 13:28:12 2024 +0200
+Date:   Mon Nov 11 16:37:36 2024 +0100
 Size: counted 206440 of 206440 words (nodes).
 Size: min(0, log((N/1000)**2)) = 10.6600196265611.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -20,60 +20,86 @@ Features: source of annotation (from README) factor is 0.8.
 Universal relations: 30 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 1.
 Udapi:
-               TOTAL      59452
-Udapi: found 59452 bugs.
+               TOTAL      58780
+Udapi: found 58780 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 206440 words.
-Genres: found 1 out of 17 known.
+Genres: found 1 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang sa --max-err=10 UD_Sanskrit-Vedic/sa_vedic-ud-dev.conllu
+[Line 722 Sent 102798_1 Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'tu eva' does not have the 'ExtPos' feature
+[Line 744 Sent 102800_1 Node 2]: [L3 Warning fixed-without-extpos] Fixed expression '_ eva' does not have the 'ExtPos' feature
+[Line 775 Sent 102802_1 Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'ca eva' does not have the 'ExtPos' feature
+[Line 868 Sent 102809_1 Node 6]: [L3 Warning fixed-without-extpos] Fixed expression 'api _' does not have the 'ExtPos' feature
+[Line 948 Sent 102812_1 Node 3]: [L3 Warning fixed-without-extpos] Fixed expression 'tu eva' does not have the 'ExtPos' feature
+[Line 1089 Sent 102837_1 Node 3]: [L3 Warning fixed-without-extpos] Fixed expression 'tu eva' does not have the 'ExtPos' feature
+[Line 1100 Sent 102838_1 Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'ha eva' does not have the 'ExtPos' feature
+[Line 1412 Sent 173689_1 Node 3]: [L3 Warning fixed-without-extpos] Fixed expression 'ca eva' does not have the 'ExtPos' feature
 [Line 3634 Sent 430121_1 Node 5]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
-[Line 9673 Sent 492828_3 Node 3]: [L3 Warning leaf-det] 'det' not expected to have children (3:etat:det --> 7:karma:acl)
-[Line 18115 Sent 585989_1 Node 7]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'dislocated'.
-[Line 25733 Sent 616932_1 Node 6]: [L3 Warning leaf-det] 'det' not expected to have children (6:tam:det --> 5:jahāsi:acl)
-[Line 27226 Sent 627755_1 Node 4]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'obl'.
-[Line 28638 Sent 630779_1 Node 1]: [L3 Warning leaf-det] 'det' not expected to have children (1:viśvam:det --> 6:śuklam:nmod)
-[Line 36679 Sent 673721_1 Node 2]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
-[Line 39171 Sent 700699_1 Node 1]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
-[Line 40800 Sent 715394_1 Node 2]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'obl'.
-[Line 40805 Sent 715394_1 Node 7]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
-Warnings: 10
-*** PASSED ***
+[Line 4965 Sent 470949_1 Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'hi eva' does not have the 'ExtPos' feature
+...suppressing further errors regarding Warning
+[Line 9673 Sent 492828_3 Node 3]: [L3 Syntax leaf-det] 'det' not expected to have children (3:etat:det --> 7:karma:acl)
+[Line 25733 Sent 616932_1 Node 6]: [L3 Syntax leaf-det] 'det' not expected to have children (6:tam:det --> 5:jahāsi:acl)
+[Line 28638 Sent 630779_1 Node 1]: [L3 Syntax leaf-det] 'det' not expected to have children (1:viśvam:det --> 6:śuklam:nmod)
+Syntax errors: 3
+Warnings: 137
+*** FAILED *** with 3 errors
+Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang sa --max-err=10 UD_Sanskrit-Vedic/sa_vedic-ud-test.conllu
 [Line 290 Sent 101854_2 Node 28]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'nmod'.
+[Line 910 Sent 102921_1 Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'tu eva' does not have the 'ExtPos' feature
+[Line 1082 Sent 102935_1 Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'u vai' does not have the 'ExtPos' feature
+[Line 1087 Sent 102935_1 Node 7]: [L3 Warning fixed-without-extpos] Fixed expression 'ca eva' does not have the 'ExtPos' feature
+[Line 1090 Sent 102935_1 Node 10]: [L3 Warning fixed-without-extpos] Fixed expression 'ca eva' does not have the 'ExtPos' feature
+[Line 1148 Sent 102966_1 Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'u vai' does not have the 'ExtPos' feature
 [Line 1192 Sent 102968_1 Node 8]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'nmod'.
-[Line 5714 Sent 462122_1 Node 1]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'dislocated'.
-[Line 5716 Sent 462122_1 Node 3]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'dislocated'.
-[Line 14160 Sent 581122_2 Node 2]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
-[Line 14458 Sent 582290_1 Node 8]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'obl'.
-[Line 15029 Sent 587992_1 Node 6]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
-[Line 15975 Sent 589214_2 Node 1]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'obl'.
-[Line 15993 Sent 589215_1 Node 5]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
-[Line 15994 Sent 589215_1 Node 6]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
+[Line 1781 Sent 187089_1 Node 6]: [L3 Warning fixed-without-extpos] Fixed expression 'iti eva' does not have the 'ExtPos' feature
+[Line 1887 Sent 187100_1 Node 7]: [L3 Warning fixed-without-extpos] Fixed expression 'iti eva' does not have the 'ExtPos' feature
+[Line 1991 Sent 187110_1 Node 8]: [L3 Warning fixed-without-extpos] Fixed expression 'iti eva' does not have the 'ExtPos' feature
 ...suppressing further errors regarding Warning
-Warnings: 21
-*** PASSED ***
+[Line 19290 Sent 598109_1 Node 18]: [L3 Syntax leaf-det] 'det' not expected to have children (18:tat:det --> 4:cakṛma:acl)
+[Line 20541 Sent 614487_1 Node 18]: [L3 Syntax leaf-det] 'det' not expected to have children (18:tān:det --> 17:vibhaktāḥ:acl)
+[Line 21121 Sent 615945_1 Node 12]: [L3 Syntax leaf-det] 'det' not expected to have children (12:taiḥ:det --> 4:hāsante:acl)
+[Line 28209 Sent 639320_1 Node 2]: [L3 Syntax leaf-det] 'det' not expected to have children (2:eṣa:det --> 1:saḥ:acl)
+[Line 28216 Sent 639320_1 Node 2]: [L3 Syntax leaf-det] 'det' not expected to have children (2:eṣa:det --> 8:tapati:acl)
+Syntax errors: 5
+Warnings: 136
+*** FAILED *** with 5 errors
+Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang sa --max-err=10 UD_Sanskrit-Vedic/sa_vedic-ud-train.conllu
 [Line 1564 Sent 70748_1 Node 7]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
 [Line 2844 Sent 101919_1 Node 21]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'dislocated'.
 [Line 2991 Sent 101936_1 Node 10]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'nmod'.
 [Line 4076 Sent 102848_1 Node 1]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
 [Line 4077 Sent 102848_1 Node 2]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
-[Line 5966 Sent 103572_1 Node 3]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'nmod'.
-[Line 6648 Sent 103749_1 Node 8]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'obl'.
-[Line 6856 Sent 103853_1 Node 1]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
-[Line 9774 Sent 184366_1 Node 1]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'dislocated'.
-[Line 11260 Sent 186998_1 Node 10]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'obl'.
+[Line 4087 Sent 102848_1 Node 12]: [L3 Warning fixed-without-extpos] Fixed expression '_ eva' does not have the 'ExtPos' feature
+[Line 4142 Sent 102850_2 Node 5]: [L3 Warning fixed-without-extpos] Fixed expression 'ca eva' does not have the 'ExtPos' feature
+[Line 4145 Sent 102850_2 Node 8]: [L3 Warning fixed-without-extpos] Fixed expression 'ca eva' does not have the 'ExtPos' feature
+[Line 4365 Sent 102896_1 Node 3]: [L3 Warning fixed-without-extpos] Fixed expression 'tu eva' does not have the 'ExtPos' feature
+[Line 4724 Sent 103030_1 Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'api tu' does not have the 'ExtPos' feature
 ...suppressing further errors regarding Warning
-Warnings: 117
-*** PASSED ***
-Validity: 1
+[Line 18466 Sent 423718_1 Node 1]: [L3 Syntax leaf-det] 'det' not expected to have children (1:yat:det --> 2:me:nmod)
+[Line 18468 Sent 423718_1 Node 8]: [L3 Syntax leaf-det] 'det' not expected to have children (8:tat:det --> 4:upepsitam:acl)
+[Line 18473 Sent 423718_1 Node 8]: [L3 Syntax leaf-det] 'det' not expected to have children (8:tat:det --> 9:me:nmod)
+[Line 46205 Sent 473005_1 Node 2]: [L3 Syntax leaf-det] 'det' not expected to have children (2:yaḥ:det --> 4:asya:nmod)
+[Line 49000 Sent 473281_1 Node 8]: [L3 Syntax leaf-det] 'det' not expected to have children (8:viśvāni:det --> 1:pratyaṅ:acl)
+[Line 49074 Sent 473287_1 Node 11]: [L3 Syntax leaf-det] 'det' not expected to have children (11:tayā:det --> 5:tanūḥ:acl)
+[Line 73034 Sent 556856_1 Node 9]: [L3 Syntax leaf-det] 'det' not expected to have children (9:tat:det --> 6:mithunam:acl)
+[Line 93975 Sent 584290_1 Node 15]: [L3 Syntax leaf-det] 'det' not expected to have children (15:tat:det --> 5:arhāt:acl)
+[Line 121258 Sent 597614_1 Node 19]: [L3 Syntax leaf-det] 'det' not expected to have children (19:tam:det --> 6:praviveśa:acl)
+[Line 140036 Sent 615702_1 Node 5]: [L3 Syntax leaf-det] 'det' not expected to have children (5:sarvam:det --> 1:divam:nmod)
+...suppressing further errors regarding Syntax
+Syntax errors: 24
+Warnings: 931
+*** FAILED *** with 24 errors
+Exit code: 1
+Validity: 0.01
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
-(weight=0.0769230769230769) * (score{genres}=0.0588235294117647) = 0.00452488687782805
+(weight=0.0769230769230769) * (score{genres}=0.0555555555555556) = 0.00427350427350427
 (weight=0.0769230769230769) * (score{lemmas}=0.8) = 0.0615384615384615
 (weight=0.256410256410256) * (score{size}=0.771597950132638) = 0.197845628239138
 (weight=0.0512820512820513) * (score{split}=1) = 0.0512820512820513
 (weight=0.0769230769230769) * (score{tags}=0.0764705882352941) = 0.00588235294117647
 (weight=0.307692307692308) * (score{udapi}=0.01) = 0.00307692307692308
 (weight=0.0769230769230769) * (score{udeprels}=0.810810810810811) = 0.0623700623700624
-(TOTAL score=0.448058827864102) * (availability=1) * (validity=1) = 0.448058827864102
-STARS = 2
-UD_Sanskrit-Vedic	0.448058827864102	2
+(TOTAL score=0.447807445259779) * (availability=1) * (validity=0.01) = 0.00447807445259779
+STARS = 0
+UD_Sanskrit-Vedic	0.00447807445259779	0
