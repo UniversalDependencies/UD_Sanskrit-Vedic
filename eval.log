@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit 26e6c87a2f518322d15901a351199b6be6569062
+commit b39dc4111bb13658bc0c204b48bb78b492e45d2b
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri Nov 7 15:39:58 2025 +0100
+Date:   Tue May 5 17:01:41 2026 +0200
 Evaluating the following revision of UD_Sanskrit-Vedic:
-commit b8fb9a3e569bfeca2298327d78ab65f3bdf70f1e
-Merge: 252468e fb2ffc9
+commit 70fd4a1a69f5caad020ab895fe7003143df97150
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Tue Nov 11 20:48:20 2025 +0100
 CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
 Language-treebank code (from CoNLL-U file name) = 'sa_vedic'
 Language code (from CoNLL-U file name) = 'sa'
@@ -25,81 +25,118 @@ Universal relations: 30 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 1.
 Genres: found 1 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang sa --max-err=10 UD_Sanskrit-Vedic/sa_vedic-ud-dev.conllu
-[Line 6 Sent 71508_1]: [L3 Warning pron-det-without-prontype] The word 'ye' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 24 Sent 71510_1]: [L3 Warning pron-det-without-prontype] The word 'yasyāḥ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 25 Sent 71510_1]: [L3 Warning pron-det-without-prontype] The word 'te' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 26 Sent 71510_1]: [L3 Warning pron-det-without-prontype] The word 'yat' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 27 Sent 71510_1]: [L3 Warning pron-det-without-prontype] The word 'te' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 231 Sent 71527_1]: [L3 Warning pron-det-without-prontype] The word 'asmin' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 233 Sent 71527_1]: [L3 Warning pron-det-without-prontype] The word 'yat' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 327 Sent 71535_1]: [L3 Warning pron-det-without-prontype] The word 'etat' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 374 Sent 71539_1]: [L3 Warning pron-det-without-prontype] The word 'tat' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 389 Sent 71540_1]: [L3 Warning pron-det-without-prontype] The word 'asmai' is tagged 'PRON' but it lacks the 'PronType' feature
-...suppressing further errors regarding Warning
-[Line 2193 Sent 424560_1]: [L3 Syntax too-many-objects] Multiple direct objects [8, 9] ('lomāni', 'aṅguṣṭham') under the predicate 'gṛhṇīyāt'.
-[Line 7778 Sent 492166_4]: [L3 Syntax too-many-objects] Multiple direct objects [1, 2] ('tam', 'agniḥ') under the predicate 'samadadhāt'.
-[Line 8409 Sent 492184_4]: [L3 Syntax too-many-objects] Multiple direct objects [1, 3] ('āhutīḥ', 'enāḥ') under the predicate 'kurvanti'.
-[Line 8839 Sent 492198_2]: [L3 Syntax too-many-objects] Multiple direct objects [5, 6] ('tat', 'enam') under the predicate 'samabharan'.
-[Line 9673 Sent 492828_3]: [L3 Syntax leaf-det] 'det' not expected to have children (3:etat:det --> 7:karma:acl)
-[Line 11970 Sent 556622_1]: [L3 Syntax too-many-objects] Multiple direct objects [8, 11] ('etat', 'tvam') under the predicate 'veda'.
-[Line 16219 Sent 559154_1]: [L3 Syntax too-many-objects] Multiple direct objects [7, 8] ('enām', 'tris') under the predicate 'abhyukṣati'.
-[Line 16306 Sent 559176_1]: [L3 Syntax too-many-objects] Multiple direct objects [21, 26] ('tam', 'avarāṁ') under the predicate 'nirjahi'.
-[Line 20671 Sent 597835_1]: [L3 Syntax too-many-objects] Multiple direct objects [2, 3] ('svanāt', 'kṛdhukarṇaḥ') under the predicate 'bhayāte'.
-[Line 21696 Sent 597982_1]: [L3 Syntax too-many-objects] Multiple direct objects [2, 5] ('bhadrā', 'kuruśravaṇa') under the predicate 'kriyāma'.
-...suppressing further errors regarding Syntax
-Syntax errors: 13
-Warnings: 3837
-*** FAILED *** with 13 errors
+[Line 6 Sent 71508_1]: [L3 WARNING pron-det-without-prontype] The word 'ye' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 24 Sent 71510_1]: [L3 WARNING pron-det-without-prontype] The word 'yasyāḥ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 25 Sent 71510_1]: [L3 WARNING pron-det-without-prontype] The word 'te' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 26 Sent 71510_1]: [L3 WARNING pron-det-without-prontype] The word 'yat' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 27 Sent 71510_1]: [L3 WARNING pron-det-without-prontype] The word 'te' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 231 Sent 71527_1]: [L3 WARNING pron-det-without-prontype] The word 'asmin' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 233 Sent 71527_1]: [L3 WARNING pron-det-without-prontype] The word 'yat' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 327 Sent 71535_1]: [L3 WARNING pron-det-without-prontype] The word 'etat' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 374 Sent 71539_1]: [L3 WARNING pron-det-without-prontype] The word 'tat' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 389 Sent 71540_1]: [L3 WARNING pron-det-without-prontype] The word 'asmai' is tagged 'PRON' but it lacks the 'PronType' feature
+...suppressing further messages regarding WARNING/MORPHO
+[Line 722 Sent 102798_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'tu eva' does not have the 'ExtPos' feature
+[Line 744 Sent 102800_1]: [L3 WARNING fixed-without-extpos] Fixed expression '_ eva' does not have the 'ExtPos' feature
+[Line 775 Sent 102802_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'ca eva' does not have the 'ExtPos' feature
+[Line 868 Sent 102809_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'api _' does not have the 'ExtPos' feature
+[Line 948 Sent 102812_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'tu eva' does not have the 'ExtPos' feature
+[Line 1089 Sent 102837_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'tu eva' does not have the 'ExtPos' feature
+[Line 1100 Sent 102838_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'ha eva' does not have the 'ExtPos' feature
+[Line 1412 Sent 173689_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'ca eva' does not have the 'ExtPos' feature
+[Line 1792 Sent 423846_1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [20] 'janān') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 1807 Sent 423846_1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [40] 'pūrvāhṇam') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 2193 Sent 424560_1]: [L3 SYNTAX too-many-objects] Multiple direct objects [8, 9] ('lomāni', 'aṅguṣṭham') under the predicate 'gṛhṇīyāt'.
+[Line 3634 Sent 430121_1]: [L3 WARNING orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
+[Line 4965 Sent 470949_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'hi eva' does not have the 'ExtPos' feature
+...suppressing further messages regarding WARNING/SYNTAX
+[Line 7778 Sent 492166_4]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 2] ('tam', 'agniḥ') under the predicate 'samadadhāt'.
+[Line 8409 Sent 492184_4]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 3] ('āhutīḥ', 'enāḥ') under the predicate 'kurvanti'.
+[Line 8839 Sent 492198_2]: [L3 SYNTAX too-many-objects] Multiple direct objects [5, 6] ('tat', 'enam') under the predicate 'samabharan'.
+[Line 9673 Sent 492828_3]: [L3 SYNTAX leaf-det] 'det' not expected to have children (3:etat:det --> 7:karma:acl)
+[Line 11970 Sent 556622_1]: [L3 SYNTAX too-many-objects] Multiple direct objects [8, 11] ('etat', 'tvam') under the predicate 'veda'.
+[Line 15927 Sent 559134_1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [6] 'upahāsam') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 16219 Sent 559154_1]: [L3 SYNTAX too-many-objects] Multiple direct objects [7, 8] ('enām', 'tris') under the predicate 'abhyukṣati'.
+...suppressing further messages regarding ERROR/SYNTAX
+Warnings: 3829
+SYNTAX errors: 21
+*** FAILED *** with 21 errors
 Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang sa --max-err=10 UD_Sanskrit-Vedic/sa_vedic-ud-test.conllu
-[Line 59 Sent 70345_1]: [L3 Warning pron-det-without-prontype] The word 'etayoḥ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 70 Sent 70345_1]: [L3 Syntax too-many-objects] Multiple direct objects [1, 9] ('etayoḥ', 'marmāṇi') under the predicate 'aśnāti'.
-[Line 78 Sent 70346_1]: [L3 Warning pron-det-without-prontype] The word 'yaḥ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 99 Sent 70348_1]: [L3 Warning pron-det-without-prontype] The word 'sarvaiḥ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 129 Sent 70351_1]: [L3 Warning pron-det-without-prontype] The word 'yaḥ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 130 Sent 70351_1]: [L3 Warning pron-det-without-prontype] The word 'asmān' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 132 Sent 70351_1]: [L3 Warning pron-det-without-prontype] The word 'yam' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 134 Sent 70351_1]: [L3 Warning pron-det-without-prontype] The word 'vayam' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 136 Sent 70351_1]: [L3 Warning pron-det-without-prontype] The word 'tasmin' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 254 Sent 101854_1]: [L3 Warning pron-det-without-prontype] The word 'tasmin' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 290 Sent 101854_2]: [L3 Warning orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'nmod'.
-...suppressing further errors regarding Warning
-[Line 13852 Sent 558802_1]: [L3 Syntax too-many-objects] Multiple direct objects [10, 13] ('yat', 'tat') under the predicate 'abrūthāḥ'.
-[Line 19290 Sent 598109_1]: [L3 Syntax leaf-det] 'det' not expected to have children (18:tat:det --> 4:cakṛma:acl)
-[Line 20541 Sent 614487_1]: [L3 Syntax leaf-det] 'det' not expected to have children (18:tān:det --> 17:vibhaktāḥ:acl)
-[Line 21121 Sent 615945_1]: [L3 Syntax leaf-det] 'det' not expected to have children (12:taiḥ:det --> 4:hāsante:acl)
-[Line 28209 Sent 639320_1]: [L3 Syntax leaf-det] 'det' not expected to have children (2:eṣa:det --> 1:saḥ:acl)
-[Line 28216 Sent 639320_1]: [L3 Syntax leaf-det] 'det' not expected to have children (2:eṣa:det --> 8:tapati:acl)
-Syntax errors: 7
-Warnings: 2983
-*** FAILED *** with 7 errors
+[Line 59 Sent 70345_1]: [L3 WARNING pron-det-without-prontype] The word 'etayoḥ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 70 Sent 70345_1]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 9] ('etayoḥ', 'marmāṇi') under the predicate 'aśnāti'.
+[Line 78 Sent 70346_1]: [L3 WARNING pron-det-without-prontype] The word 'yaḥ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 99 Sent 70348_1]: [L3 WARNING pron-det-without-prontype] The word 'sarvaiḥ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 129 Sent 70351_1]: [L3 WARNING pron-det-without-prontype] The word 'yaḥ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 130 Sent 70351_1]: [L3 WARNING pron-det-without-prontype] The word 'asmān' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 132 Sent 70351_1]: [L3 WARNING pron-det-without-prontype] The word 'yam' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 134 Sent 70351_1]: [L3 WARNING pron-det-without-prontype] The word 'vayam' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 136 Sent 70351_1]: [L3 WARNING pron-det-without-prontype] The word 'tasmin' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 254 Sent 101854_1]: [L3 WARNING pron-det-without-prontype] The word 'tasmin' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 290 Sent 101854_2]: [L3 WARNING orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'nmod'.
+[Line 297 Sent 101854_2]: [L3 WARNING pron-det-without-prontype] The word 'tvā' is tagged 'PRON' but it lacks the 'PronType' feature
+...suppressing further messages regarding WARNING/MORPHO
+[Line 910 Sent 102921_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'tu eva' does not have the 'ExtPos' feature
+[Line 1082 Sent 102935_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'u vai' does not have the 'ExtPos' feature
+[Line 1087 Sent 102935_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'ca eva' does not have the 'ExtPos' feature
+[Line 1090 Sent 102935_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'ca eva' does not have the 'ExtPos' feature
+[Line 1148 Sent 102966_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'u vai' does not have the 'ExtPos' feature
+[Line 1192 Sent 102968_1]: [L3 WARNING orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'nmod'.
+[Line 1781 Sent 187089_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'iti eva' does not have the 'ExtPos' feature
+[Line 1887 Sent 187100_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'iti eva' does not have the 'ExtPos' feature
+[Line 1991 Sent 187110_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'iti eva' does not have the 'ExtPos' feature
+...suppressing further messages regarding WARNING/SYNTAX
+[Line 5796 Sent 462144_1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [2] 'kramaṇa') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 6005 Sent 463083_1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [5] 'aṣṭake') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 7365 Sent 473351_1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [3] 'maṇḍam') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 13852 Sent 558802_1]: [L3 SYNTAX too-many-objects] Multiple direct objects [10, 13] ('yat', 'tat') under the predicate 'abrūthāḥ'.
+[Line 15536 Sent 588432_2]: [L3 SYNTAX obl-should-be-nmod] The parent (node [8] 'stenam') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 19290 Sent 598109_1]: [L3 SYNTAX leaf-det] 'det' not expected to have children (18:tat:det --> 4:cakṛma:acl)
+[Line 20541 Sent 614487_1]: [L3 SYNTAX leaf-det] 'det' not expected to have children (18:tān:det --> 17:vibhaktāḥ:acl)
+[Line 21121 Sent 615945_1]: [L3 SYNTAX leaf-det] 'det' not expected to have children (12:taiḥ:det --> 4:hāsante:acl)
+[Line 23468 Sent 627162_1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [7] 'bheṣajā') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+...suppressing further messages regarding ERROR/SYNTAX
+Warnings: 2974
+SYNTAX errors: 16
+*** FAILED *** with 16 errors
 Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang sa --max-err=10 UD_Sanskrit-Vedic/sa_vedic-ud-train.conllu
-[Line 6 Sent 70280_1]: [L3 Warning pron-det-without-prontype] The word 'pūrvasya' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 85 Sent 70289_1]: [L3 Warning pron-det-without-prontype] The word 'sarva' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 147 Sent 70295_1]: [L3 Warning pron-det-without-prontype] The word 'aham' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 207 Sent 70299_1]: [L3 Warning pron-det-without-prontype] The word 'tvam' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 208 Sent 70299_1]: [L3 Warning pron-det-without-prontype] The word 'naḥ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 212 Sent 70299_1]: [L3 Warning pron-det-without-prontype] The word 'me' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 264 Sent 70304_1]: [L3 Warning pron-det-without-prontype] The word 'pūrvasya' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 312 Sent 70308_1]: [L3 Warning pron-det-without-prontype] The word 'sarva' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 332 Sent 70310_1]: [L3 Warning pron-det-without-prontype] The word 'etāni' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 373 Sent 70314_1]: [L3 Warning pron-det-without-prontype] The word 'sarva' is tagged 'PRON' but it lacks the 'PronType' feature
-...suppressing further errors regarding Warning
-[Line 3963 Sent 102144_1]: [L3 Syntax too-many-objects] Multiple direct objects [4, 7] ('varṣāṇi', 'brahmacaryam') under the predicate 'caret'.
-[Line 5261 Sent 103344_1]: [L3 Syntax too-many-objects] Multiple direct objects [4, 8] ('sāvitrī', 'sāmasāvitrīm') under the predicate 'anuvacanam'.
-[Line 18466 Sent 423718_1]: [L3 Syntax leaf-det] 'det' not expected to have children (1:yat:det --> 2:me:nmod)
-[Line 18468 Sent 423718_1]: [L3 Syntax leaf-det] 'det' not expected to have children (8:tat:det --> 4:upepsitam:acl)
-[Line 18473 Sent 423718_1]: [L3 Syntax leaf-det] 'det' not expected to have children (8:tat:det --> 9:me:nmod)
-[Line 20287 Sent 424131_1]: [L3 Syntax too-many-objects] Multiple direct objects [3, 4] ('ajinam', 'uttarīyam') under the predicate 'karoti'.
-[Line 26132 Sent 430073_1]: [L3 Syntax too-many-objects] Multiple direct objects [2, 12] ('gṛhītām', 'aṅgāni') under the predicate 'saṃmṛśya'.
-[Line 28570 Sent 430494_1]: [L3 Syntax too-many-objects] Multiple direct objects [1, 3] ('tāsām', 'navanītam') under the predicate 'gṛhītvā'.
-[Line 35523 Sent 465259_1]: [L3 Syntax too-many-objects] Multiple direct objects [3, 4] ('artham', 'aupaniṣadikam') under the predicate 'prayuñjīta'.
-[Line 41419 Sent 471049_1]: [L3 Syntax too-many-objects] Multiple direct objects [6, 7] ('tām', '_') under the predicate 'udgāsyasi'.
-...suppressing further errors regarding Syntax
-Syntax errors: 65
-Warnings: 22892
-*** FAILED *** with 65 errors
+[Line 6 Sent 70280_1]: [L3 WARNING pron-det-without-prontype] The word 'pūrvasya' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 85 Sent 70289_1]: [L3 WARNING pron-det-without-prontype] The word 'sarva' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 147 Sent 70295_1]: [L3 WARNING pron-det-without-prontype] The word 'aham' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 207 Sent 70299_1]: [L3 WARNING pron-det-without-prontype] The word 'tvam' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 208 Sent 70299_1]: [L3 WARNING pron-det-without-prontype] The word 'naḥ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 212 Sent 70299_1]: [L3 WARNING pron-det-without-prontype] The word 'me' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 264 Sent 70304_1]: [L3 WARNING pron-det-without-prontype] The word 'pūrvasya' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 312 Sent 70308_1]: [L3 WARNING pron-det-without-prontype] The word 'sarva' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 332 Sent 70310_1]: [L3 WARNING pron-det-without-prontype] The word 'etāni' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 373 Sent 70314_1]: [L3 WARNING pron-det-without-prontype] The word 'sarva' is tagged 'PRON' but it lacks the 'PronType' feature
+...suppressing further messages regarding WARNING/MORPHO
+[Line 1564 Sent 70748_1]: [L3 WARNING orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
+[Line 1969 Sent 70785_1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [1] 'haridrām') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 2067 Sent 70795_1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [4] 'phāṇṭān') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 2844 Sent 101919_1]: [L3 WARNING orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'dislocated'.
+[Line 2991 Sent 101936_1]: [L3 WARNING orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'nmod'.
+[Line 3948 Sent 102125_1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [2] 'sāṃsparśakāṇi') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 3963 Sent 102144_1]: [L3 SYNTAX too-many-objects] Multiple direct objects [4, 7] ('varṣāṇi', 'brahmacaryam') under the predicate 'caret'.
+[Line 4076 Sent 102848_1]: [L3 WARNING orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
+[Line 4077 Sent 102848_1]: [L3 WARNING orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'orphan'.
+[Line 4087 Sent 102848_1]: [L3 WARNING fixed-without-extpos] Fixed expression '_ eva' does not have the 'ExtPos' feature
+[Line 4142 Sent 102850_2]: [L3 WARNING fixed-without-extpos] Fixed expression 'ca eva' does not have the 'ExtPos' feature
+[Line 4145 Sent 102850_2]: [L3 WARNING fixed-without-extpos] Fixed expression 'ca eva' does not have the 'ExtPos' feature
+[Line 4365 Sent 102896_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'tu eva' does not have the 'ExtPos' feature
+[Line 4659 Sent 103028_1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [3] 'piṇḍān') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 4724 Sent 103030_1]: [L3 WARNING fixed-without-extpos] Fixed expression 'api tu' does not have the 'ExtPos' feature
+[Line 5261 Sent 103344_1]: [L3 SYNTAX too-many-objects] Multiple direct objects [4, 8] ('sāvitrī', 'sāmasāvitrīm') under the predicate 'anuvacanam'.
+...suppressing further messages regarding WARNING/SYNTAX
+[Line 6642 Sent 103749_1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [3] 'upasthānam') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 9375 Sent 184331_1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [6] 'anyaḥ') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 9892 Sent 184376_1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [13] 'bhāgaḥ') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 10232 Sent 184406_1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [2] 'janma') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+...suppressing further messages regarding ERROR/SYNTAX
+Warnings: 22791
+SYNTAX errors: 166
+*** FAILED *** with 166 errors
 Exit code: 1
 Validity: 0.01
 (weight=0.111111111111111) * (score{features}=0.8) = 0.0888888888888889
